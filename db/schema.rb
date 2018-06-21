@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_21_140455) do
+ActiveRecord::Schema.define(version: 2018_06_21_202545) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "fuzzystrmatch"
@@ -21,6 +21,16 @@ ActiveRecord::Schema.define(version: 2018_06_21_140455) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "favorites", force: :cascade do |t|
+    t.string "favoritable_type"
+    t.bigint "favoritable_id"
+    t.string "user"
+    t.string "references"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["favoritable_type", "favoritable_id"], name: "index_favorites_on_favoritable_type_and_favoritable_id"
   end
 
   create_table "movies", force: :cascade do |t|
