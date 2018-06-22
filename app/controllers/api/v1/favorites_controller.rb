@@ -19,4 +19,13 @@ class Api::V1::FavoritesController < ApplicationController
     head ​:ok
   end
 
+  private
+​
+  def​ set_favorite
+    @favorite = Favorite.find_by(​favoritable_type: params[​:type​].capitalize!, ​favoritable_id:​ params[​:id​], ​user: current_user)
+  end
+ ​
+  def​ favorite_params
+    params.​require​(​:favorite​).permit(​:favoritable_type​, :favoritable_id​).merge(​user:​ current_user)
+  end
 end
