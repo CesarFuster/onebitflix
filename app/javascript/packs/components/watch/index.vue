@@ -1,6 +1,6 @@
 <template>
  <div>
-  <h4 class="white--text">Wellcome to WatchPage</h4>
+  <h4 class="white--text">Welcome to WatchPage</h4>
  </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-   <h4 class="white--text">Wellcome to HomePage</h4>
+   <h4 class="white--text">Welcome to HomePage</h4>
   </div>
 </template>
 

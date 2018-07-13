@@ -39,7 +39,7 @@
 </template>
 
 <script>
- import Logo from '../../assets/logo.png ';
+ import Logo from '../../assets/logo.png';
  export default {
   data () {
    return {
