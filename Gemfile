@@ -10,6 +10,7 @@ gem 'fast_jsonapi' ,  git:   "https://github.com/Netflix/fast_jsonapi" , branch:
 gem 'pg_search'
 gem 'webpacker'
 gem 'foreman'
+gem "aws-sdk-s3"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
