@@ -3,11 +3,7 @@
 one:
   favoritable: one
   favoritable_type: Favoritable
-  user: MyString
-  references: MyString
 
 two:
   favoritable: two
   favoritable_type: Favoritable
-  user: MyString
-  references: MyString
