@@ -16,10 +16,7 @@
        Nearby
        <v-icon>account_box</v-icon>
      </v-tab>
-     <v-tab-item
-       v-for="i in 3"
-       :key="i"
-       :id="'tab-' + i"
+     <v-tab-item v-for="i in 3" :key="i" :id="'tab-' + i"
      >
        <v-card flat>
         <v-card-text>{{ text }}</v-card-text>
@@ -34,15 +31,14 @@
 <script>
  export default {
   data () {
-   return {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing
+   return { text: 'Lorem ipsum dolor sit amet, consectetur adipiscing
 elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 laboris nisi ut aliquip ex ea commodo consequat.'
    }
   }
 }
-</script>
+<\/script>
 
 <style scoped>
 p {
